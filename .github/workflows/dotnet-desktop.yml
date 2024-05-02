@@ -39,6 +39,7 @@
 name: .NET Core Desktop
 
 on:
+  repository_dispatch:
   push:
     branches: [ "master" ]
   pull_request:
