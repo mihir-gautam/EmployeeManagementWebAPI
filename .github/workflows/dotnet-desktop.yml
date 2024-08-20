@@ -40,8 +40,7 @@ name: .NET Core Desktop
 
 on:
   workflow_dispatch:
-environment:
-  name: 'dev'
+
 jobs:
 
   build:
@@ -111,3 +110,5 @@ jobs:
       with:
         name: MSIX Package
         path: ${{ env.Wap_Project_Directory }}\AppPackages
+  environment:
+      name: 'dev'
