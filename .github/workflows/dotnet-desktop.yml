@@ -40,7 +40,8 @@ name: .NET Core Desktop
 
 on:
   workflow_dispatch:
-
+environment:
+  name: 'dev'
 jobs:
 
   build:
