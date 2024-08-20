@@ -44,7 +44,8 @@ on:
 jobs:
 
   build:
-
+    environment: 
+      name: 'dev'
     strategy:
       matrix:
         configuration: [Debug, Release]
@@ -110,5 +111,3 @@ jobs:
       with:
         name: MSIX Package
         path: ${{ env.Wap_Project_Directory }}\AppPackages
-  environment:
-     name: 'dev'
